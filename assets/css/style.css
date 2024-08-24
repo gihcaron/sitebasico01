@@ -23,7 +23,7 @@
 }
 body{
     color: var(--text-color);
-    background: var(--bg-color);
+    background: var(#ffffffab);
 }
 header{
     position: fixed;
@@ -163,6 +163,82 @@ section{
     color: var(--text-color);
 }
 
+/* Página Sobre -----------------------------*/
 
+.header2{
+    position: fixed;
+    top: 0;
+    right:0;
+    /*Contorla a ordem de sobreposição dos elementos - Não alterar*/
+    z-index: 1000;
+    width: 100%;
+    background: rgb(0, 40, 56);
+    padding: 27px 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
 
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    padding:  1rem;
+    margin: 5rem 0;
+   color: rgb(0, 40, 56);
+   align-items: center;
+   position: relative; /*Posicionar a barraa*/
 
+} 
+.heading::before{
+    content: '';
+    display:block;
+    width: 200px; /*Largura da barra*/
+    height:4px;/*Altura da barra*/
+    background-color: var(--main-color);
+    margin: 0 auto 1 rem auto; /*Centralizar*/
+    position:absolute; /*Posicionamento absoluto em relação ao texto da Heading*/
+    top:-0.5rem; /*Ajuste para ficar acima do texto*/
+    left: 50%;
+    transform: translateX(-50%); 
+}
+.Sobre .row{
+    display: flex;
+    align-items: flex-start; /*Alinhar itens no início*/
+    align-items: center;
+    gap:2 rem; /*Espaço - Image -> Conteúdo*/
+    flex-wrap: wrap;
+    padding:2 rem 0;
+    padding-bottom:3rem;
+}
+
+.sobre .row .foto-cruzeiro{
+    flex:1 1 40rem;
+    position: relative;
+    margin-right:2rem;
+}
+.sobre .row .foto-cruzeiro img{
+
+    width: 100%;
+    max-width: 100%; /*Não exceder a largura do contêiner*/
+    border: 1.5rem solid rgb(0, 40, 56);
+    border-radius: 2rem;
+    box-shadow: 0.5rem 1rem var(--main-color);
+    height: auto;
+    align-content: left;
+    object-fit: cover;  /*imagem ajustada ao contêiner*/
+}
+.sobre .row .foto-cruzeiro .h3{
+    position:absolute;
+    top:50%;transform: translateY(-50%);
+    font-size: 3rem;
+    color:#333;
+    background:#fff ;
+}
+
+.sobre .row .conteudo{
+    flex: 1 1 40rem;
+    padding: 1rem; /*espaçamento de dentro ao redor do conteúdo*/
+
+}
