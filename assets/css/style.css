@@ -1,0 +1,96 @@
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border:none;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    /*Cor*/
+    --text-color: #fff;
+    --bg-color:#000;
+    --main-color:#ffa343;
+
+    /*Texto */
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+header{
+    position: fixed;
+    top: 0;
+    right:0;
+    z-index:100%;
+    width: 100%;
+    background: transparent;
+    padding: 27px 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+.logo{
+    font-size: 33px;
+    color: var(--text-color);
+    font-weight: 700;   
+}
+span{
+    color: var(--main-color)   
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 15px 22px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    /*Quando passa o mouse muda a cor - header */
+    color: var(--main-color);
+    
+}
+.h-right{
+    display:flex;
+    align-items: center;
+}
+.h-right a:first-child{
+    color:var(--text-color);
+    font-size: var(--p-font);
+    margin-right: 20px;
+}
+.h-right a img{
+    /*Tamanho logo GitHub*/
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+.h-right a{
+    vertical-align: middle;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all .50s ease;
+}
+.h-right a:hover{
+    color: var(--main-color);
+    transform: translateY(-3px);
+}
+#menu-icon{
+   color: var(--text-color);
+   font-size: 30px;
+   cursor: pointer;
+   z-index: 10001; 
+   display: none;
+}
