@@ -244,3 +244,81 @@ section{
 }
 
 /* Página Contato -----------------------------*/
+
+.contato .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    justify-content: space-between;
+}
+
+.contato .row form{
+    flex: 1 1 40rem;
+    margin-left: 4rem;
+    margin-right: 0;
+    max-width: 800px;
+    padding: 2rem 2.5rem;
+    border: 0.3rem solid rgba(0,0,0,0.1);
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+   
+}
+.contato .row form .box{
+    padding:0.5rem;
+    font-size: 1rem;
+    color:#000;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,0.1);
+    border-radius: .5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+.contato .row form .box:focus{
+    border-color: rgb(0, 40, 56);   
+}
+.contato .row form textarea{
+    /*Campo do "Digite sua mensagem"*/
+    height:15rem;
+    resize:none;   
+}
+#contato{
+    display: flex;
+}
+.textos h1{
+    /*Titulozão*/
+    margin-top: 100px;
+    text-align: center;
+}
+.contato{
+    /*Container de contato*/
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to Left, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../../img/cruzeiro2.png');
+    background-size:cover;
+    background-position: bottom center;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+}
+.contato-text h1{
+        /*Titulozão da pag Contato */
+        font-size: var(--h1-font);
+        font-weight: 800;
+        /*Alinhar o texto verticalmente*/
+        line-height: 1.2;
+        margin-bottom: 20px;
+}
+.contato-text p{
+    font-size: var(--p-font);
+    /*Espessura da fonte*/
+    font-weight: 500;
+    line-height: 30px;
+    color:#ffffffe4;
+    text-align: center;
+    /*Distanciamento do texto*/
+    margin-bottom: 35px;
+    
+}
