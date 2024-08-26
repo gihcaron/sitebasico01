@@ -169,7 +169,7 @@ section{
     position: fixed;
     top: 0;
     right:0;
-    /*Contorla a ordem de sobreposição dos elementos - Não alterar*/
+    /*Controla a ordem de sobreposição dos elementos - Não alterar*/
     z-index: 1000;
     width: 100%;
     background: rgb(0, 40, 56);
@@ -188,63 +188,67 @@ section{
     margin: 5rem 0;
    color: rgb(0, 40, 56);
    align-items: center;
-   position: relative; /*Posicionar a barraa*/
-
-} 
-.heading::before{
-    content: '';
-    display:block;
-    width: 200px; /*Largura da barra*/
-    height:4px;/*Altura da barra*/
-    background-color: var(--main-color);
-    margin: 0 auto 1 rem auto; /*Centralizar*/
-    position:absolute; /*Posicionamento absoluto em relação ao texto da Heading*/
-    top:-0.5rem; /*Ajuste para ficar acima do texto*/
-    left: 50%;
-    transform: translateX(-50%); 
-}
-.Sobre .row{
-    display: flex;
-    align-items: flex-start; /*Alinhar itens no início*/
-    align-items: center;
-    gap:2 rem; /*Espaço - Image -> Conteúdo*/
-    flex-wrap: wrap;
-    padding:2 rem 0;
-    padding-bottom:3rem;
+   position: relative; /*Posicionar a barra*/
 }
 
-.sobre .row .foto-cruzeiro{
-    flex:1 1 40rem;
+.heading-sobre{
     position: relative;
-    margin-right:2rem;
-}
-.sobre .row .foto-cruzeiro img{
-
+    height: 100vh;
     width: 100%;
-    max-width: 100%; /*Não exceder a largura do contêiner*/
-    border: 1.5rem solid rgb(0, 40, 56);
-    border-radius: 2rem;
-    box-shadow: 0.5rem 1rem var(--main-color);
-    height: auto;
-    align-content: left;
-    object-fit: cover;  /*imagem ajustada ao contêiner*/
+    background-image: linear-gradient(to Left, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../../img/cruzeiro3.png');
+    background-size:cover;
+    background-position: bottom center;
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 300px;
 }
-.sobre .row .foto-cruzeiro .h3{
-    position:absolute;
-    top:50%;transform: translateY(-50%);
-    font-size: 3rem;
-    color:#333;
-    background:#fff ;
+.heading-sobre h1{
+    font-size: var(--h1-font);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
-
-.sobre .row .conteudo{
-    flex: 1 1 40rem;
-    padding: 1rem; /*espaçamento de dentro ao redor do conteúdo*/
-
+.heading-sobre h5{
+    font-size:18px;
+    font-weight: 1000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: var(--main-color);
+}
+.descricao-sobre p{
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 1.6;
+    color:#ffffffe4;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.btn2{
+    /*Caixinha*/
+    /*conteúdo em linha (mesma linha que outros elementos)*/
+    display: inline-block;
+    padding: 13px 40px;
+    background:var(--main-color);
+    font-size: 15px;
+     /*Espessura da fonte*/
+    font-weight: 500;
+    line-height: 30px;
+    color:#ffff;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+}
+.descricao-sobre{
+    padding-top: 10px;
+}
+.descricao-sobre a{
+    margin-top: 20px;
 }
 
 /* Página Contato -----------------------------*/
-
 .contato .row{
     display: flex;
     flex-wrap: wrap;
@@ -287,7 +291,6 @@ section{
     display: flex;
 }
 .textos h1{
-    /*Titulozão*/
     margin-top: 100px;
     text-align: center;
 }
@@ -304,21 +307,16 @@ section{
     justify-content: flex-start;
 }
 .contato-text h1{
-        /*Titulozão da pag Contato */
         font-size: var(--h1-font);
         font-weight: 800;
-        /*Alinhar o texto verticalmente*/
         line-height: 1.2;
         margin-bottom: 20px;
 }
 .contato-text p{
     font-size: var(--p-font);
-    /*Espessura da fonte*/
     font-weight: 500;
     line-height: 30px;
     color:#ffffffe4;
     text-align: center;
-    /*Distanciamento do texto*/
     margin-bottom: 35px;
-    
 }
