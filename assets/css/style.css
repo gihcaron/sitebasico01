@@ -247,7 +247,11 @@ section{
 .descricao-sobre a{
     margin-top: 20px;
 }
-
+.img img{
+    margin-top: 12px;
+    width: 500px; 
+    border-radius: 40%;
+}
 /* Página Contato -----------------------------*/
 .contato .row{
     display: flex;
