@@ -10,6 +10,7 @@
     scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;
 }
+
 :root{
     /*Cor*/
     --text-color: #fff;
@@ -21,10 +22,12 @@
     --h2-font: 3rem;
     --p-font: 1rem;
 }
+
 body{
     color: var(--text-color);
     background: var(#ffffffab);
 }
+
 header{
     position: fixed;
     top: 0;
@@ -39,43 +42,51 @@ header{
     justify-content: space-between;
     transition: all .50s ease;
 }
+
 .logo{
     font-size: 33px;
     color: var(--text-color);
     font-weight: 700;   
 }
+
 span{
     color: var(--main-color)   
 }
+
 .navbar{
     display: flex;
 }
+
 .navbar a{
     color: var(--text-color);
     font-weight: 500;
     margin: 15px 22px;
     transition: all .50s ease;
 }
+
 .navbar a:hover{
     /*Quando passa o mouse muda a cor - header */
     color: var(--main-color);
     
 }
+
 .h-right{
     display:flex;
     align-items: center;
 }
+
 .h-right a:first-child{
     color:var(--text-color);
     font-size: var(--p-font);
     margin-right: 20px;
 }
+
 .h-right a img{
-    /*Tamanho logo GitHub*/
     width: 24px;
     height: 24px;
     display: block;
 }
+
 .h-right a{
     vertical-align: middle;
     font-size: 20px;
@@ -84,10 +95,12 @@ span{
     margin-left: 5px;
     transition: all .50s ease;
 }
+
 .h-right a:hover{
     color: var(--main-color);
     transform: translateY(-3px);
 }
+
 #menu-icon{
    color: var(--text-color);
    font-size: 30px;
@@ -95,16 +108,17 @@ span{
    z-index: 10001; 
    display: none;
 }
+
 section{
     /*Alinhar a seção home*/
     padding: 70px 17% 60px;   
 }
+
 .Home{
     /*Estrutura da home*/
     position: relative;
     height: 100vh;
     width: 100%;
-    /*Imagem de fundo*/
     background-image: linear-gradient(to Left, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../../img/cruzeiro.png');
     background-size:cover;
     background-position: bottom center;
@@ -112,6 +126,7 @@ section{
     align-items: center;
     justify-content: flex-start;
 }
+
 .home-text h5{
     /*Escrita do "Let's */
     font-size:18px;
@@ -122,6 +137,7 @@ section{
     letter-spacing: 6px;
     color: var(--main-color);
 }
+
 .home-text h1{
     /*Titulozão da pag Home */
     font-size: var(--h1-font);
@@ -130,6 +146,7 @@ section{
     line-height: 1.2;
     margin-bottom: 20px;
 }
+
 .home-text p{
     font-size: var(--p-font);
     /*Espessura da fonte*/
@@ -140,14 +157,12 @@ section{
     /*Distanciamento do texto*/
     margin-bottom: 35px;
 }
+
 .btn{
-    /*Caixinha*/
-    /*conteúdo em linha (mesma linha que outros elementos)*/
     display: inline-block;
     padding: 13px 40px;
     background:var(--main-color);
     font-size: 15px;
-     /*Espessura da fonte*/
     font-weight: 500;
     line-height: 30px;
     color:#ffff;
@@ -155,6 +170,7 @@ section{
     transition: all .50s ease;
     cursor: pointer;
 }
+
 .btn:hover{
     transform: translateX(10px);
     border: 2px solid;
@@ -204,12 +220,14 @@ section{
     justify-content: center;
     padding-left: 300px;
 }
+
 .heading-sobre h1{
     font-size: var(--h1-font);
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 20px;
 }
+
 .heading-sobre h5{
     font-size:18px;
     font-weight: 1000;
@@ -218,6 +236,7 @@ section{
     letter-spacing: 6px;
     color: var(--main-color);
 }
+
 .descricao-sobre p{
     font-size: var(--p-font);
     font-weight: 500;
@@ -226,6 +245,7 @@ section{
     max-width: 800px;
     margin: 0 auto;
 }
+
 .btn2{
     /*Caixinha*/
     /*conteúdo em linha (mesma linha que outros elementos)*/
@@ -241,17 +261,21 @@ section{
     transition: all .50s ease;
     cursor: pointer;
 }
+
 .descricao-sobre{
     padding-top: 10px;
 }
+
 .descricao-sobre a{
     margin-top: 20px;
 }
+
 .img img{
     margin-top: 12px;
     width: 500px; 
     border-radius: 40%;
 }
+
 /* Página Contato -----------------------------*/
 .contato .row{
     display: flex;
@@ -272,6 +296,7 @@ section{
     box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
    
 }
+
 .contato .row form .box{
     padding:0.5rem;
     font-size: 1rem;
@@ -283,14 +308,17 @@ section{
     margin-bottom: 1rem;
 
 }
+
 .contato .row form .box:focus{
     border-color: rgb(0, 40, 56);   
 }
+
 .contato .row form textarea{
     /*Campo do "Digite sua mensagem"*/
     height:15rem;
     resize:none;   
 }
+
 #contato{
     display: flex;
 }
@@ -298,6 +326,7 @@ section{
     margin-top: 100px;
     text-align: center;
 }
+
 .contato{
     /*Container de contato*/
     position: relative;
@@ -310,12 +339,14 @@ section{
     align-items: center;
     justify-content: flex-start;
 }
+
 .contato-text h1{
         font-size: var(--h1-font);
         font-weight: 800;
         line-height: 1.2;
         margin-bottom: 20px;
 }
+
 .contato-text p{
     font-size: var(--p-font);
     font-weight: 500;
